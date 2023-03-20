@@ -8,12 +8,12 @@ The goal of the work was to create a Braille display that allows books to be sca
 <img src="./20230106_172618.jpg" width="300" title="device"> 
 
 ## Menu
-<img src="./menu.PNG" width="500" title="device"> 
-* Zrób zdjęcie -> take a photo and translate its text into Braille and then show it on the display,
+* Zrób zdjęcie take a photo and translate its text into Braille and then show it on the display,
 * Zgadnij literke -> guess the letter, the program will randomly show a letter from the alphabet on the display,
 * Przetłumacz tekst na aflabet Braille -> translate typed text into Braille,
 * Klawiatura -> display or hide the touchscreen keyboard,
 * Przywróć ->  this button will start the last configuration of servo-motors.
+<img src="./menu.PNG" width="500" title="device"> 
 
 ## Required libraries for your Raspberry pi
 `sudo apt install tesseract-ocr`
@@ -24,7 +24,7 @@ The goal of the work was to create a Braille display that allows books to be sca
 `sudo pip3 install adafruit-circuitpython-servokit`
 `sudo pip3 install pysimplegui`
 
-## Electronics components:
+## Electronics components
 * Raspberry Pi 3B+
 * PCA9685
 * Camera Raspberry Pi HD v2 8MPx
