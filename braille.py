@@ -252,7 +252,7 @@ def cameraMain():
              translateToBraille = unidecode(translateToBraille,'utf-8')
              translate_to_braille(translateToBraille)
              cv2.imshow("Frame", image)
-             #cv2.waitKey(0)
+             cv2.waitKey(0)
              break
 
      cv2.destroyAllWindows()
@@ -263,11 +263,7 @@ while True:
     if event == "Zamknij" or event == sg.WIN_CLOSED:
         break
     elif event == "Zrób zdjęcie":
-        # cameraMain()
-       print('robie')
-       text = 'abcac'
-       text = unidecode(text, "utf-8")
-       translate_to_braille(text)
+       cameraMain()
     elif event == "Zgadnij literke":
         letterToGuess = (random.choice(brailleDotsLetters))
         print(letterToGuess)
